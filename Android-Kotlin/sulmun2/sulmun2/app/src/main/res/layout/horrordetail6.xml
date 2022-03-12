@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:src="@drawable/image6"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="50dp"
+        />
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:text="감독 : 스콧 제프리"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="40dp"/>
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:text="영화 제목 : 해피데스데이"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="-160dp"
+        />
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:text="영화사 : KOBIS"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="-150dp"
+        />
+
+
+
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:text="영화 소개"
+        android:textColor="#FF0000"
+        android:layout_marginTop="-150dp"
+        />
+
+    <TextView
+        android:layout_width="390dp"
+        android:layout_height="250dp"
+        android:text="전교생으로부터 왕따를 당하는 소녀 '페이'. 특히, 같은 학년 엘리스는 부모님 사이의 문제로 페이를 더 심각하게 괴롭힌다. 어느 날, 친구들이 모여 있는 장소에서 공개적으로 페이에게 망신을 준 엘리스. 참다못한 페이는 학교의 괴담처럼 내려오는 악마의 주문을 외우고, 이후 학교에서 공포스러운 사건들이 발생하는데..."
+        android:layout_marginTop="-150dp"
+        android:fontFamily="@font/happytfruit"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        />
+
+
+
+
+
+
+</LinearLayout>

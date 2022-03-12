@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:src="@drawable/image8"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="50dp"
+        />
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:text="감독 : 정범식"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="40dp"/>
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:text="영화 제목 : 곤지암"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="-160dp"
+        />
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:text="영화사 : 하이프 미디어코프"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="-150dp"
+        />
+
+
+
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:text="영화 소개"
+        android:textColor="#FF0000"
+        android:layout_marginTop="-150dp"
+        />
+
+    <TextView
+        android:layout_width="390dp"
+        android:layout_height="250dp"
+        android:text="1979년 환자 42명의 집단 자살과 병원장의 실종 이후, 섬뜩한 괴담으로 둘러싸인 곤지암 정신병원으로 공포체험을 떠난 7명의 멤버들 원장실, 집단 치료실, 실험실, 열리지 않는 402호… 괴담의 실체를 담아내기 위해 병원 내부를 촬영하기 시작하던 멤버들에게 상상도 못한 기이하고 공포스러운 일들이 실제로 벌어지기 시작 하는데… 가지 말라는 곳에는 반드시 이유가 있다. 소름 끼치는 ‘곤지암 정신병원’ 의 실체를 체험하라!"
+        android:layout_marginTop="-150dp"
+        android:fontFamily="@font/happytfruit"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        />
+
+
+
+
+
+
+</LinearLayout>

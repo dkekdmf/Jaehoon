@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:src="@drawable/thehouse"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="50dp"
+        />
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:text="개발 : 신타이 스튜디오"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="40dp"/>
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:text="게임 제목 : the house"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="-160dp"
+        />
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:text="배급사 : 신타이 스튜디오"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="-150dp"
+        />
+
+
+
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:text="게임 소개"
+        android:textColor="#FF0000"
+        android:layout_marginTop="-150dp"
+        />
+
+    <TextView
+        android:layout_width="390dp"
+        android:layout_height="250dp"
+        android:text="일가족 살인 사건이 일어난 집을 탐험하는 게임. 5개의 방이 있는데, 각 가족들이 어떻게 죽었는지 보여준다.
+마지막 귀신의 얼굴이 리메이크된 버전이 공식으로 업데이트되었다. 원래 마지막 귀신은 눈을 제거했다는 설정이라, 원본은 눈알이 없는 일본 귀신 같은 얼굴이었으나 리메이크 버전은 완전히 얼굴을 뜯어 고쳤다.[2] 비명도 외마디 비명에서 꽤나 시끄러운 절규톤으로 바뀌어 처음 해본다면 깜짝 놀랄 수도 있다.
+"
+        android:layout_marginTop="-150dp"
+        android:fontFamily="@font/happytfruit"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        />
+
+
+
+
+
+
+</LinearLayout>

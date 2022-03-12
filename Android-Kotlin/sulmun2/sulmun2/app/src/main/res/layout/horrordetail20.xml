@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:src="@drawable/ssrami"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="50dp"
+        />
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:text="저자 : 류키시07"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="40dp"/>
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:text="만화 제목 : 쓰라라미울적에"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="-160dp"
+        />
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:text="출판사 : 학산문화사"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="-150dp"
+        />
+
+
+
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:text="책 소개"
+        android:textColor="#FF0000"
+        android:layout_marginTop="-150dp"
+        />
+
+    <TextView
+        android:layout_width="390dp"
+        android:layout_height="100dp" android:text=" 새로운 친구들과 만나며 지내는 그 곳에서의 생활은 너무나도 즐겁고 평화로웠다. 하지만 마을의 여름축제 ‘와타나가시날’이 다가오면서 이 행복에 금이 가기 시작한다. 축제를 맞아 방문한 카메라맨 토미타케 로부터 케이이치는 마을에서 일어난 토막살인 사건에 대해 듣게 된다. 그리고 그 사건은 ‘오야시로님의 저주’라고 불리는 기괴한 연쇄 변사 사건과 관련이 있다고 하는데?. 하지만 친구들은 모두 이 사건에 대해 숨기며 케이이치에게 거짓말을 하고 있다! 그리고 의문을 품는 케이이치에게 차례로 공포가 엄습하는데?!"
+        android:layout_marginTop="-150dp"
+        android:fontFamily="@font/happytfruit"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        />
+
+
+
+
+
+
+</LinearLayout>

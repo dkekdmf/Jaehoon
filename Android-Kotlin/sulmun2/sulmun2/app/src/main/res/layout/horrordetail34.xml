@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:src="@drawable/wonjumin"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="50dp"
+        />
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:text="저자 : 원주민"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="40dp"/>
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:text="만화 제목 : 원주민 공포만화"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="-160dp"
+        />
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:text="출판사 : 네이버 웹툰"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="-150dp"
+        />
+
+
+
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:text="책 소개"
+        android:textColor="#FF0000"
+        android:layout_marginTop="-150dp"
+        />
+
+    <TextView
+        android:layout_width="390dp"
+        android:layout_height="100dp" android:text="끝까지 방심하지 말 것! 당신의 상상을 뛰어넘는 본격 반전 공포 스릴러가 온다!"        android:layout_marginTop="-150dp"
+        android:fontFamily="@font/happytfruit"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        />
+
+
+
+
+
+
+</LinearLayout>

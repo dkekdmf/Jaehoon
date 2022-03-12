@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="horizontal"
+    android:layout_marginTop="-17dp">
+
+    <ImageView
+        android:id="@+id/back_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="50dp"
+
+        android:src="@drawable/arrow1" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-30dp"
+        android:orientation="vertical"
+        >
+
+        <View
+
+
+            android:layout_marginStart="-9dp"
+            android:layout_marginTop="-6dp"
+            android:layout_width="430dp"
+            android:layout_height="99dp"
+            />
+        <TextView
+            android:fontFamily="@font/happytfruit"
+            android:layout_width="310dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="-70dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:textColor="#FFFFFF"
+            android:text="B타입"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:textSize="25dp"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/happytfruit"
+            android:text="공포 만화 추천">
+
+        </TextView>
+    </LinearLayout>
+
+
+    <LinearLayout
+
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:layout_marginStart="-350dp"
+        android:layout_marginTop="125dp"
+        >
+        <ImageView
+            android:id="@+id/image17"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/saluk"
+            android:padding="3dp"
+        ></ImageView>
+        <ImageView
+            android:id="@+id/image18"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ito1"
+            android:padding="3dp"
+            ></ImageView>
+        <ImageView
+            android:id="@+id/image19"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/another"
+            android:padding="3dp">
+        </ImageView>
+        <ImageView
+            android:id="@+id/image20"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ssrami"
+            android:padding="3dp"
+            >
+
+        </ImageView>
+
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="230dp"
+        android:textSize="25dp"
+        android:layout_marginStart="-350dp"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/happytfruit"
+        android:text=" 공포 영화 추천">
+
+    </TextView>
+    <LinearLayout
+
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:layout_marginStart="-150dp"
+        android:layout_marginTop="260dp"
+        >
+        <ImageView
+            android:id="@+id/image21"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/guimun2"
+            android:padding="3dp"
+            ></ImageView>
+        <ImageView
+            android:id="@+id/image22"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/juon"
+            android:padding="3dp"
+            ></ImageView>
+        <ImageView
+            android:id="@+id/image23"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/us"
+            android:padding="3dp">
+        </ImageView>
+        <ImageView
+            android:id="@+id/image24"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/theboy"
+            android:padding="3dp"
+            >
+
+        </ImageView>
+
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="370dp"
+        android:textSize="25dp"
+        android:layout_marginStart="-350dp"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/happytfruit"
+        android:text=" 공포 책 추천">
+
+    </TextView>
+    <LinearLayout
+
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:layout_marginStart="-150dp"
+        android:layout_marginTop="400dp"
+        >
+        <ImageView
+            android:id="@+id/image25"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/gwai"
+            android:padding="3dp"
+            ></ImageView>
+        <ImageView
+            android:id="@+id/image26"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/thetrrop"
+            android:padding="3dp"
+            ></ImageView>
+        <ImageView
+            android:id="@+id/image27"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/gumiho"
+            android:padding="3dp">
+        </ImageView>
+        <ImageView
+            android:id="@+id/image28"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/nojo"
+            android:padding="3dp"
+            >
+
+        </ImageView>
+
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="510dp"
+        android:textSize="25dp"
+        android:layout_marginStart="-350dp"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/happytfruit"
+        android:text=" 공포 게임 추천">
+
+    </TextView>
+    <LinearLayout
+
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:layout_marginStart="-150dp"
+        android:layout_marginTop="540dp"
+        >
+        <ImageView
+            android:id="@+id/image29"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/thehouse"
+            android:padding="3dp"
+            ></ImageView>
+        <ImageView
+            android:id="@+id/image30"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/soma"
+            android:padding="3dp"
+            ></ImageView>
+        <ImageView
+            android:id="@+id/image31"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bokdo"
+            android:padding="3dp">
+        </ImageView>
+        <ImageView
+            android:id="@+id/image32"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/untildun"
+            android:padding="3dp"
+            >
+
+        </ImageView>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:src="@drawable/baksa"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="50dp"
+        />
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:text="저자 : 미쓰다 신조"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="40dp"/>
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:text="책 제목 : 백사당"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="-160dp"
+        />
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:text="출판사 : 한스 미디어"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="-150dp"
+        />
+
+
+
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:text="책 소개"
+        android:textColor="#FF0000"
+        android:layout_marginTop="-150dp"
+        />
+
+    <TextView
+        android:layout_width="390dp"
+        android:layout_height="250dp"
+        android:text=" 미쓰다 신조는 집필 요청을 하기 위해 교토의 다쓰미네 집에 전화를 건다. 하지만 햐쿠미 가문이 있는 마을 주변에서 발생한 어린이 실종 사건을 입에 담자 다쓰미의 태도는 일변한다. 하지만 열흘 정도 후, ‘사관장’에 얽힌 체험담을 적은 원고가 미쓰다 신조에게 배달된다. 그 원고를 읽기 시작하자 미쓰다 신조의 주변에서 괴기 현상이 일어난다. 뿐만 아니라 흥미를 느껴 원고 복사본을 읽은 후배 편집자 역시 괴기 현상을 겪은 끝에 카페에서 홀연히 사라지고 마는데……."       android:layout_marginTop="-150dp"
+        android:fontFamily="@font/happytfruit"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        />
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,588 @@
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="wrap_content" >
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="#000000">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:text="공포 심리 테스트"
+                android:fontFamily="@font/sky"
+                android:textColor="#FFFFFF"
+                android:textSize="25dp"
+                android:background="#000000"
+                android:layout_marginStart="133dp"
+                android:layout_marginTop="28dp"
+                android:layout_width="430dp"
+                android:layout_height="99dp" />
+
+
+
+
+            <RelativeLayout
+                android:layout_marginTop="7dp"
+                android:layout_marginStart="-3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+
+                <ImageView
+                    android:id="@+id/back_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="27dp"
+                    android:layout_marginTop="25dp"
+
+                    android:src="@drawable/arrow1" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:fontFamily="@font/happytfruit"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:layout_marginLeft="63dp"
+                android:layout_marginTop="110dp"
+                android:layout_width="302dp"
+                android:layout_height="70dp"
+
+                android:text="당신은 인간관계가 길게 지속되는 편인가요?"
+                />
+
+            <TextView
+                android:fontFamily="@font/happytfruit"
+                android:textSize="30sp"
+                android:textColor="#FFFFFF"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="113dp"
+                android:layout_width="25dp"
+                android:layout_height="51dp"
+                />
+
+            <View
+                android:background="@drawable/blueshape1"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="110dp"
+                android:layout_width="43dp"
+                android:backgroundTint="@color/your_color"
+                android:layout_height="43dp" />
+
+            <TextView
+
+                android:layout_width="25dp"
+                android:layout_height="51dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="115dp"
+                android:fontFamily="@font/happytfruit"
+                android:text="05"
+                android:textColor="#000000"
+                android:textSize="26sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioGroup
+                    android:id="@+id/rg5"
+                    android:layout_width="400dp"
+                    android:layout_height="1350dp"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="200dp"
+
+                    >
+
+                    <RadioButton
+                        android:id="@+id/radio21"
+                        android:layout_width="80dp"
+                        android:layout_height="22dp"
+                        android:layout_weight="1"
+
+                        android:buttonTint="@color/your_color"
+                        android:fontFamily="@font/happytfruit"
+                        android:textColor="#FFFFFF"
+                        android:text="매우아니다"
+                        android:textSize="14dp" />
+
+                    <RadioButton
+                        android:id="@+id/radio22"
+                        android:buttonTint="@color/your_color"
+                        android:textColor="#FFFFFF"
+                        android:layout_width="80dp"
+                        android:layout_height="22dp"
+
+                        android:layout_weight="1"
+                        android:fontFamily="@font/happytfruit"
+                        android:text="아니다"
+                        android:textSize="14dp" />
+
+                    <RadioButton
+                        android:id="@+id/radio23"
+                        android:buttonTint="@color/your_color"
+                        android:textColor="#FFFFFF"
+                        android:layout_width="80dp"
+                        android:layout_height="22dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/happytfruit"
+                        android:text="보통이다"
+                        android:textSize="14dp" />
+
+
+                    <RadioButton
+                        android:id="@+id/radio24"
+                        android:layout_width="80dp"
+                        android:buttonTint="@color/your_color"
+                        android:textColor="#FFFFFF"
+                        android:layout_height="22dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/happytfruit"
+                        android:text="그렇다"
+                        android:textSize="14dp" />
+
+                    <RadioButton
+                        android:id="@+id/radio25"
+                        android:layout_width="80dp"
+                        android:layout_height="22dp"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/your_color"
+                        android:textColor="#FFFFFF"
+                        android:fontFamily="@font/happytfruit"
+                        android:text="매우그렇다"
+                        android:textSize="14dp" />
+
+                </RadioGroup>
+            </LinearLayout>
+            <TextView
+                android:fontFamily="@font/happytfruit"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:layout_marginLeft="62dp"
+                android:layout_marginTop="267dp"
+                android:layout_width="302dp"
+                android:layout_height="70dp"
+                android:text="무슨 일을 하던 정신을 집중하기 어렵나요?"/>
+
+
+
+            <View
+                android:background="@drawable/sulcircle5"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="267dp"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:backgroundTint="@color/your_color"/>
+
+            <TextView
+                android:fontFamily="@font/happytfruit"
+                android:textSize="30sp"
+                android:textColor="#FFFFFF"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="272dp"
+                android:layout_width="25dp"
+                android:layout_height="51dp"
+
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioGroup
+                    android:id="@+id/rg6"
+                    android:layout_width="400dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="365dp"
+
+                    >
+
+                    <RadioButton
+                        android:id="@+id/radio26"
+                        android:layout_width="80dp"
+                        android:layout_height="22dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/happytfruit"
+                        android:text="매우아니다"
+                        android:buttonTint="@color/your_color"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14dp" />
+
+                    <RadioButton
+                        android:id="@+id/radio27"
+
+                        android:layout_width="65dp"
+                        android:layout_height="22dp"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/your_color"
+                        android:textColor="#FFFFFF"
+                        android:fontFamily="@font/happytfruit"
+                        android:text="아니다"
+                        android:textSize="14dp" />
+
+                    <RadioButton
+                        android:id="@+id/radio28"
+
+                        android:layout_width="80dp"
+                        android:layout_height="22dp"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/your_color"
+                        android:textColor="#FFFFFF"
+                        android:fontFamily="@font/happytfruit"
+                        android:text="보통이다"
+                        android:textSize="14dp" />
+
+
+                    <RadioButton
+                        android:id="@+id/radio29"
+                        android:layout_width="80dp"
+                        android:layout_height="22dp"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/your_color"
+                        android:textColor="#FFFFFF"
+                        android:fontFamily="@font/happytfruit"
+                        android:text="그렇다"
+                        android:textSize="14dp" />
+
+                    <RadioButton
+                        android:id="@+id/radio30"
+                        android:layout_width="80dp"
+
+                        android:layout_height="22dp"
+                        android:buttonTint="@color/your_color"
+                        android:textColor="#FFFFFF"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/happytfruit"
+                        android:text="매우그렇다"
+                        android:textSize="14dp" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+            <TextView
+                android:fontFamily="@font/happytfruit"
+                android:textSize="30sp"
+
+                android:layout_marginLeft="21dp"
+                android:layout_marginTop="270dp"
+                android:layout_width="25dp"
+                android:layout_height="51dp"
+
+                />
+
+            <View
+                android:background="@drawable/sulcircle10"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="267dp"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:backgroundTint="@color/your_color"/>
+
+            <TextView
+                android:fontFamily="@font/happytfruit"
+                android:textSize="30sp"
+                android:textColor="#000000"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="270dp"
+                android:layout_width="29dp"
+                android:layout_height="51dp"
+                android:text="06"
+                />
+
+            <View
+                android:backgroundTint="@color/your_color"
+                android:background="@drawable/sulcircle15"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="424dp"
+                android:layout_width="43dp"
+                android:layout_height="43dp" />
+
+            <TextView
+
+                android:layout_width="29dp"
+                android:layout_height="51dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="427dp"
+                android:fontFamily="@font/happytfruit"
+                android:text="07"
+                android:textColor="#000000"
+                android:textSize="30sp" />
+
+
+            <TextView
+                android:fontFamily="@font/happytfruit"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:layout_marginLeft="63dp"
+                android:layout_marginTop="424dp"
+                android:layout_width="302dp"
+                android:layout_height="70dp"
+                android:text="아침에 눈 뜨는게 두려운적이 있나요?"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioGroup
+                    android:id="@+id/rg7"
+                    android:layout_width="400dp"
+                    android:layout_height="1350dp"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="515dp"
+
+                    >
+
+                    <RadioButton
+                        android:id="@+id/radio31"
+                        android:layout_width="80dp"
+                        android:layout_height="22dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/happytfruit"
+                        android:text="매우아니다"
+                        android:buttonTint="@color/your_color"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14dp" />
+
+                    <RadioButton
+                        android:id="@+id/radio32"
+
+                        android:layout_width="65dp"
+                        android:layout_height="22dp"
+                        android:buttonTint="@color/your_color"
+                        android:textColor="#FFFFFF"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/happytfruit"
+                        android:text="아니다"
+                        android:textSize="14dp" />
+
+                    <RadioButton
+                        android:id="@+id/radio33"
+
+                        android:layout_width="80dp"
+                        android:layout_height="22dp"
+                        android:buttonTint="@color/your_color"
+                        android:textColor="#FFFFFF"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/happytfruit"
+                        android:text="보통이다"
+                        android:textSize="14dp" />
+
+
+                    <RadioButton
+                        android:id="@+id/radio34"
+                        android:layout_width="80dp"
+                        android:layout_height="22dp"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/your_color"
+                        android:textColor="#FFFFFF"
+                        android:fontFamily="@font/happytfruit"
+                        android:text="그렇다"
+                        android:textSize="14dp" />
+
+                    <RadioButton
+                        android:id="@+id/radio35"
+                        android:layout_width="80dp"
+
+                        android:layout_height="22dp"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/your_color"
+                        android:textColor="#FFFFFF"
+                        android:fontFamily="@font/happytfruit"
+                        android:text="매우그렇다"
+                        android:textSize="14dp" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <TextView
+
+                android:layout_width="300dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="580dp"
+                android:fontFamily="@font/happytfruit"
+                android:textColor="#FFFFFF"
+                android:text="늘 쫓기는 느낌이 드나요?"
+
+                android:textSize="20sp" />
+
+
+            <View
+                android:backgroundTint="@color/your_color"
+                android:background="@drawable/sulcircle20"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="580dp"
+                android:layout_width="43dp"
+                android:layout_height="43dp" />
+
+            <TextView
+                android:fontFamily="@font/happytfruit"
+                android:textSize="30sp"
+                android:textColor="#000000"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="582dp"
+                android:layout_width="29dp"
+                android:layout_height="51dp"
+                android:text="08"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioGroup
+                    android:id="@+id/rg8"
+                    android:layout_width="400dp"
+                    android:layout_height="1350dp"
+                    android:layout_marginTop="670dp"
+                    android:orientation="horizontal"
+
+
+                    >
+
+                    <RadioButton
+                        android:id="@+id/radio36"
+                        android:layout_width="80dp"
+                        android:layout_height="22dp"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/your_color"
+                        android:fontFamily="@font/happytfruit"
+                        android:text="매우아니다"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14dp" />
+
+                    <RadioButton
+                        android:id="@+id/radio37"
+
+                        android:layout_width="65dp"
+                        android:layout_height="22dp"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/your_color"
+                        android:fontFamily="@font/happytfruit"
+                        android:text="아니다"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14dp" />
+
+                    <RadioButton
+                        android:id="@+id/radio38"
+
+                        android:layout_width="80dp"
+                        android:layout_height="22dp"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/your_color"
+                        android:fontFamily="@font/happytfruit"
+                        android:text="보통이다"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14dp" />
+
+
+                    <RadioButton
+                        android:id="@+id/radio39"
+                        android:layout_width="80dp"
+                        android:layout_height="22dp"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/your_color"
+                        android:fontFamily="@font/happytfruit"
+                        android:text="그렇다"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14dp" />
+
+                    <RadioButton
+                        android:id="@+id/radio40"
+                        android:layout_width="80dp"
+
+                        android:layout_height="22dp"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/your_color"
+                        android:fontFamily="@font/happytfruit"
+                        android:text="매우그렇다"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14dp" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+
+
+
+
+
+
+
+            <RelativeLayout
+                android:layout_marginTop="760dp"
+                android:layout_marginStart="110dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+
+                <RelativeLayout
+                    android:layout_marginTop="0dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <View
+                        android:backgroundTint="@color/your_color"
+                        android:background="@drawable/sulcircle29"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_width="39dp"
+                        android:layout_height="39dp" />
+
+                    <ImageView
+                        android:id="@+id/checknext"
+                        android:src="@drawable/search1"
+
+                        android:layout_marginStart="3dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_width="33dp"
+                        android:layout_height="33dp" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <TextView android:id="@+id/nextpage2"
+                android:fontFamily="@font/happytfruit"
+                android:textSize="30sp"
+                android:textColor="#FFFFFF"
+                android:layout_marginLeft="159dp"
+                android:layout_marginTop="765dp"
+                android:layout_width="128dp"
+                android:layout_height="54dp"
+                android:text="다음 페이지로"
+                />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</HorizontalScrollView>

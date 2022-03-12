@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:src="@drawable/image1"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="50dp"
+       />
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:text="저자 : 신웅"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="40dp"/>
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:text="만화 제목 ㅣ정말 무서워 시리즈"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="-160dp"
+        />
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:text="출판사 : 꿈이있는집"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="-150dp"
+        />
+
+
+
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:text="책 소개"
+        android:textColor="#FF0000"
+        android:layout_marginTop="-150dp"
+    />
+
+    <TextView
+        android:layout_width="390dp"
+        android:layout_height="100dp"
+        android:text="이 책에는 13편의 무서운 이야기가 실려 있습니다. 소름끼치도록 무서운 이야기들은 한 여름의 무더위를 시원하게 날려 줄 것입니다. 만화를 통해 오싹오싹한 귀신들을 만나 보세요~!"
+        android:layout_marginTop="-150dp"
+         android:fontFamily="@font/happytfruit"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+    />
+
+
+
+
+
+
+</LinearLayout>

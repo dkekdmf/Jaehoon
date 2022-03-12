@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:src="@drawable/theboy"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="50dp"
+        />
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:text="감독 : 윌리엄 브렌트 벨"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="40dp"/>
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:text="영화 제목 : the boy"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="-160dp"
+        />
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:text="영화사 : 리틀빅픽쳐스"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="-150dp"
+        />
+
+
+
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:text="영화 소개"
+        android:textColor="#FF0000"
+        android:layout_marginTop="-150dp"
+        />
+
+    <TextView
+        android:layout_width="390dp"
+        android:layout_height="250dp"
+        android:text="이 인형을 돌보는 일은 인형이 정한 10가지 규칙을 지켜야 하는 것이다.
+노부부는 브람스를 주인공에게 부탁하고 오랜만에 긴 여행을 떠난다.
+떠나기 직전 남편이 주인공에게 무언가 말을 하려 하지만 부인이 '잘 돌봐줄거에요. 그렇죠?'  라며 말을 끊는다.
+부부가 떠난 후, 브람스와 단 둘이 저택에 남게 된 주인공.
+주인공은 보고 있으면 소름이 끼쳐 브람스를 방치한 채 돌보지않고, 당연히 규칙따윈 지키지 않는다.
+"
+        android:layout_marginTop="-150dp"
+        android:fontFamily="@font/happytfruit"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        />
+
+
+
+
+
+
+</LinearLayout>

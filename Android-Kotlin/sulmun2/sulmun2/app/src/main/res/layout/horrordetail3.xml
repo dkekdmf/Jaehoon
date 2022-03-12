@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:src="@drawable/image3"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="50dp"
+        />
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:text="저자 : 정호영"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="40dp"/>
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:text="만화 제목 : 어린이 공포만화"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="-160dp"
+        />
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:text="출판사 : 아이엘비"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="-150dp"
+        />
+
+
+
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:text="책 소개"
+        android:textColor="#FF0000"
+        android:layout_marginTop="-150dp"
+        />
+
+    <TextView
+        android:layout_width="390dp"
+        android:layout_height="100dp"
+        android:text="1930년 경에 일어났던 일로써 한 마을의 재앙을 미리 암시해 주기도 하고 가축들이 새끼를 낳거나 병이 나면 이상한 소리를 내어 알려 주는 해골, 1912년 7월 영국의 지방도시에서 나타난 하얀 드레스 입은 유령. 일본의 작은 마을에서 만난 영혼. 1943년 제2차 세계대전 때의 유령 비행사. 호주의 시드니에서 일어난 유령 간호사의 활약. 1951년 4월 영국의 북해에서 사라진 잠수함을 미리 예언한 유령. 1968년 미국에서 일어난 아기 몸을 빌린 원혼. 1963년 2월 죽은 시간이 정확하지 않은 혼란스런 생사의 수수께끼 실종 사건 등 실제 일어났던 사건들을 만화로 구성한 책."
+        android:layout_marginTop="-150dp"
+        android:fontFamily="@font/happytfruit"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        />
+
+
+
+
+
+
+</LinearLayout>

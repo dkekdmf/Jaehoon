@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:src="@drawable/another"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="50dp"
+        />
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:text="저자 : 아야츠지 유키토"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="40dp"/>
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:text="만화 제목 : ANOTHER"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="-160dp"
+        />
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:text="출판사 : 한스 미디어"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="-150dp"
+        />
+
+
+
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:text="책 소개"
+        android:textColor="#FF0000"
+        android:layout_marginTop="-150dp"
+        />
+
+    <TextView
+        android:layout_width="390dp"
+        android:layout_height="100dp" android:text=" 도쿄에서 지방 도시의 중학교로 전학을 온 사카키바라 코이치는 뭔가에 겁먹고 있는 듯한 반의 분위기에 위화감을 느낀다. 코이치는 이상한 존재감을 지닌 미소녀 미사키 메이에게 끌리지만 수수께끼는 오히려 더 깊어지고, 그런 가운데 반장인 사쿠라기 유카리가 비참한 죽음을 당한다. 비밀을 찾으려 하는 코이치 앞에 새로운 수수께끼와 공포가 기다리는데…. 어느 반에 전해지는 연쇄적인 죽음과 그에 얽힌 비밀을 파헤치려는 소년의 미스터리한 경험이 펼쳐진다."
+        android:layout_marginTop="-150dp"
+        android:fontFamily="@font/happytfruit"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        />
+
+
+
+
+
+
+</LinearLayout>

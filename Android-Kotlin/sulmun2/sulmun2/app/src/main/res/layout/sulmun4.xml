@@ -1,0 +1,130 @@
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    >
+
+
+
+
+        <ImageView
+            android:id="@+id/back_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="25dp"
+
+            android:src="@drawable/arrow1" />
+
+
+
+    <TextView
+        android:id="@+id/tresult"
+        android:textSize="30dp"
+        android:fontFamily="@font/happytfruit"
+        android:layout_width="250dp"
+        android:gravity="center"
+        android:textColor="#FF0000"
+        android:layout_height="40dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/result"
+        android:textSize="30dp"
+        android:fontFamily="@font/happytfruit"
+        android:layout_width="250dp"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:layout_height="80dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/typeresult"
+        android:textSize="30dp"
+        android:fontFamily="@font/happytfruit"
+        android:layout_width="250dp"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:layout_height="155dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="30dp"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp">
+
+        </LinearLayout>
+        <Button
+            android:text="메인화면 돌아가기"
+            android:id="@+id/horrorchange1"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:fontFamily="@font/happytfruit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="-65dp"
+
+            />
+
+
+
+        <View
+            android:id="@+id/atype"
+            android:backgroundTint="@color/your_color"
+            android:background="@drawable/blueshape1"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="-180dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+
+        <TextView
+            android:textSize="30dp"
+            android:layout_width="80dp"
+            android:layout_height="51dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="-60dp"
+            android:fontFamily="@font/happytfruit"
+            android:text="A타입"/>
+    <View
+        android:id="@+id/btype"
+        android:backgroundTint="@color/your_color"
+        android:background="@drawable/blueshape1"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="-70dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+
+    <TextView
+        android:textSize="30dp"
+        android:layout_width="80dp"
+        android:layout_height="51dp"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="-60dp"
+        android:fontFamily="@font/happytfruit"
+        android:text="B타입"/>
+    <View
+        android:id="@+id/ctype"
+        android:backgroundTint="@color/your_color"
+        android:background="@drawable/blueshape1"
+        android:layout_marginStart="320dp"
+        android:layout_marginTop="-70dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+
+    <TextView
+        android:textSize="30dp"
+        android:layout_width="80dp"
+        android:layout_height="51dp"
+        android:layout_marginLeft="330dp"
+        android:layout_marginTop="-60dp"
+        android:fontFamily="@font/happytfruit"
+        android:text="C타입"/>
+
+
+</LinearLayout>

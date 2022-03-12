@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:src="@drawable/grego"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="50dp"
+        />
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:text="저자 : 아가사 크리스티"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="40dp"/>
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:text="책 제목 : 그리고 아무도 없었다"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="-160dp"
+        />
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:text="출판사 : 해문 출판사"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="-150dp"
+        />
+
+
+
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:text="책 소개"
+        android:textColor="#FF0000"
+        android:layout_marginTop="-150dp"
+        />
+
+    <TextView
+        android:layout_width="390dp"
+        android:layout_height="250dp"
+        android:text=" 인디언 섬이라는 무인도에 여덟 명의 남녀가 정체 불명의 사람에게 초대받는다. 여덟 명의 손님이 섬에 와 보니 초대한 사람은 없고, 하인 부부만이 그들을 기다리고 있다. 뒤이어 섬에 모인 열 사람이 차례로 죽어간다. 한 사람이 죽자, 식탁 위에 있던 열 개의 인디언 인형 중에서 한 개가 없어진다. 인디언 동요의 가사에 맞춰 무인도에 갇힌 열 사람은 모두 죽고 한 사람도 살아 남지 못한다. 인디언 섬에는 이들 열 명 외엔 아무도 없다. 섬에 갇힌 사람이 모두 살해되었으니 범인은 도대체 누구일까?"       android:layout_marginTop="-150dp"
+        android:fontFamily="@font/happytfruit"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        />
+
+
+
+
+
+
+</LinearLayout>

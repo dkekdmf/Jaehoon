@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sulmun2" >
+
+
+
+    <application
+        android:allowBackup="true"
+        android:roundIcon="@mipmap/ic_horror_round"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        android:label="공포 심리 테스트" >
+        <activity
+            android:name="com.example.sulmun2.horrordetail.horrordetail1"
+            android:exported="true"
+            />
+        <activity
+            android:name="com.example.sulmun2.horrordetail.horrordetail2"
+            android:exported="true"
+            />
+        <activity
+            android:name="com.example.sulmun2.horrordetail.horrordetail3"
+            android:exported="true"
+            />
+        <activity
+            android:name="com.example.sulmun2.horrordetail.horrordetail4"
+            android:exported="true"
+            />
+        <activity
+            android:name="com.example.sulmun2.horrordetail.horrordetail5"
+            android:exported="true"
+            />
+        <activity
+            android:name="com.example.sulmun2.horrordetail.horrordetail6"
+            android:exported="true"
+            />
+        <activity
+            android:name="com.example.sulmun2.horrordetail.horrordetail7"
+            android:exported="true"
+            />
+        <activity
+            android:name="com.example.sulmun2.horrordetail.horrordetail8"
+            android:exported="true"
+            />
+        <activity
+            android:name="com.example.sulmun2.horrordetail.horrordetail9"
+            android:exported="true"
+            />
+        <activity
+            android:name="com.example.sulmun2.horrordetail.horrordetail10"
+            android:exported="true"
+            />
+        <activity
+            android:name="com.example.sulmun2.horrordetail.horrordetail11"
+            android:exported="true"
+            />
+        <activity
+            android:name="com.example.sulmun2.horrordetail.horrordetail12"
+            android:exported="true"
+            />
+        <activity
+            android:name="com.example.sulmun2.horrordetail.horrordetail13"
+            android:exported="true"
+            />
+        <activity
+            android:name="com.example.sulmun2.horrordetail.horrordetail14"
+            android:exported="true"
+            />
+        <activity
+            android:name="com.example.sulmun2.horrordetail.horrordetail15"
+            android:exported="true"
+            />
+        <activity
+            android:name="com.example.sulmun2.horrordetail.horrordetail16"
+            android:exported="true"
+            />
+        <activity
+            android:name="com.example.sulmun2.horror2detail.horrordetail17"
+            android:exported="true"
+            />
+        <activity
+            android:name="com.example.sulmun2.horror2detail.horrordetail18"
+            android:exported="true"
+            />
+        <activity
+            android:name="com.example.sulmun2.horror2detail.horrordetail19"
+            android:exported="true"
+            />
+        <activity
+            android:name="com.example.sulmun2.horror2detail.horrordetail20"
+            android:exported="true"
+            />
+        <activity
+            android:name="com.example.sulmun2.horror2detail.horrordetail21"
+            android:exported="true"
+            />
+        <activity
+            android:name="com.example.sulmun2.horror2detail.horrordetail22"
+            android:exported="true"
+            />
+        <activity
+            android:name="com.example.sulmun2.horror2detail.horrordetail23"
+            android:exported="true"
+            />
+        <activity
+            android:name="com.example.sulmun2.horror2detail.horrordetail24"
+            android:exported="true"
+            />
+        <activity
+            android:name="com.example.sulmun2.horror2detail.horrordetail25"
+            android:exported="true"
+            />
+        <activity
+            android:name="com.example.sulmun2.horror2detail.horrordetail26"
+            android:exported="true"
+            />
+        <activity
+            android:name="com.example.sulmun2.horror2detail.horrordetail27"
+            android:exported="true"
+            />
+        <activity
+            android:name="com.example.sulmun2.horror2detail.horrordetail28"
+            android:exported="true"
+            />
+        <activity
+            android:name="com.example.sulmun2.horror2detail.horrordetail29"
+            android:exported="true"
+            />
+        <activity
+            android:name="com.example.sulmun2.horror2detail.horrordetail30"
+            android:exported="true"
+            />
+        <activity
+            android:name="com.example.sulmun2.horror2detail.horrordetail31"
+            android:exported="true"
+            />
+        <activity
+            android:name="com.example.sulmun2.horror2detail.horrordetail32"
+            android:exported="true"
+            />
+        <activity
+            android:name="com.example.sulmun2.horror3detail.horrordetail33"
+            android:exported="true"
+            />
+        <activity
+            android:name="com.example.sulmun2.horror3detail.horrordetail34"
+            android:exported="true"
+            />
+
+        <activity
+            android:name="com.example.sulmun2.horror3detail.horrordetail35"
+            android:exported="true"
+            />
+
+        <activity
+            android:name="com.example.sulmun2.horror3detail.horrordetail36"
+            android:exported="true"
+            />
+        <activity
+            android:name="com.example.sulmun2.horror3detail.horrordetail37"
+            android:exported="true"
+            />
+
+        <activity
+            android:name="com.example.sulmun2.horror3detail.horrordetail38"
+            android:exported="true"
+            />
+
+        <activity
+            android:name="com.example.sulmun2.horror3detail.horrordetail39"
+            android:exported="true"
+            />
+        <activity
+            android:name="com.example.sulmun2.horror3detail.horrordetail40"
+            android:exported="true"
+            />
+        <activity
+            android:name="com.example.sulmun2.horror3detail.horrordetail41"
+            android:exported="true"
+            />
+        <activity
+            android:name="com.example.sulmun2.horror3detail.horrordetail42"
+            android:exported="true"
+            />
+        <activity
+            android:name="com.example.sulmun2.horror3detail.horrordetail43"
+            android:exported="true"
+            />
+
+        <activity
+            android:name="com.example.sulmun2.horror3detail.horrordetail44"
+            android:exported="true"
+            />
+
+        <activity
+            android:name="com.example.sulmun2.horror3detail.horrordetail45"
+            android:exported="true"
+            />
+        <activity
+            android:name="com.example.sulmun2.horror3detail.horrordetail46"
+            android:exported="true"
+            />
+        <activity
+            android:name="com.example.sulmun2.horror3detail.horrordetail47"
+            android:exported="true"
+            />
+        <activity
+            android:name="com.example.sulmun2.horror3detail.horrordetail48"
+            android:exported="true"
+            />
+
+
+
+
+        <activity
+            android:name="com.example.sulmun2.MainActivity"
+            android:exported="true"
+            />
+        <activity
+            android:name="com.example.sulmun2.horror1"
+            android:exported="true"
+            />
+        <activity
+            android:name="com.example.sulmun2.horror3"
+            android:exported="true"
+            />
+        <activity
+            android:name="com.example.sulmun2.Survey"
+            android:exported="true"
+            />
+
+        <activity
+            android:name="com.example.sulmun2.horror2"
+            android:exported="true"
+            />
+
+        <activity
+            android:name="com.example.sulmun2.Survey_4"
+            android:exported="true"
+           />
+        <activity android:name="com.example.sulmun2.Survey_2"
+            android:exported="true"
+            />
+            <activity android:name="com.example.sulmun2.Survey_3"
+                android:exported="true"
+                />
+        <activity android:name="com.example.sulmun2.AppIntro"
+            android:exported="true"
+           >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>
+
