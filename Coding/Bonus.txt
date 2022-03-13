@@ -1,0 +1,24 @@
+
+import java.util.*;
+
+
+
+public class Hello {
+
+	public static void main(String[] args) {
+	
+		final int targetSales = 1000;
+	Scanner input = new Scanner(System.in);
+	double Siljuk;
+	double bonus;
+	System.out.println("실적을 입력하시오(단위:만원): ");
+	Siljuk = input.nextInt();
+	bonus = (Siljuk- targetSales)*0.1;
+	if(Siljuk> targetSales)
+		System.out.println("실적 달성");
+	System.out.println("보너스: "+ bonus);
+			
+			
+	}
+
+}

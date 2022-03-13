@@ -1,0 +1,24 @@
+
+public class Hello {
+
+	public static void main(String[] args) {
+	
+		
+  double b = -3.0;
+  double c = 2.0;
+  
+  double d1 = b*b - 4*c;
+  double d2 = Math.sqrt(d1);
+  
+  double r1 = (-b+d2)/2.0;
+  double r2 = (-b-d2)/2.0;
+  
+  System.out.println(r1);
+  System.out.println(r2);
+  
+  
+		
+		
+	}
+
+}

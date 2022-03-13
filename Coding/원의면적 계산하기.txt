@@ -1,0 +1,22 @@
+
+import java.util.*;
+
+
+
+public class Hello {
+
+	public static void main(String[] args) {
+	Scanner input = new Scanner(System.in);
+double radius;
+final double PI = 3.14;
+double Circle;
+System.out.println("반지름을 입력하시오: ");
+   radius = input.nextDouble();
+   
+  Circle = PI*radius*radius;
+  
+  System.out.println(Circle); 
+
+	}
+
+}

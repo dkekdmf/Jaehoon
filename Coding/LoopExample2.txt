@@ -1,0 +1,42 @@
+package java_p;
+import java.util.*;
+import java.io.FileReader;
+
+public class Hello2030 {
+
+	public static void main(String[] args) throws Exception 
+	{
+
+		int i=1;
+		int number;
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("구구단 중에서 출력하고 싶은 단을 입력하시요: ");
+		number = input.nextInt();
+		
+		while(i<= 9){
+            
+			System.out.println(number+"*"+i + "="+ i*number);
+		
+			i++;
+			
+			
+			
+		}
+		
+		
+		
+			
+
+		}
+		
+		
+		
+		
+
+		
+	
+		
+}
+	
+

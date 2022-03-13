@@ -1,0 +1,35 @@
+
+import java.util.*;
+
+
+
+public class Hello {
+
+	public static void main(String[] args) {
+	
+		int Month;
+	int	Monthnumber;
+ Scanner input = new Scanner(System.in);
+ 
+ System.out.println("일수를 알고 싶은 월을 입력하시오: ");
+  Month = input.nextInt();
+  switch(Month)
+  {
+  case 4:
+  case 6:
+  case 9:
+  case 11:
+	  Monthnumber = 30;
+	  break;
+  case 2:
+	  Monthnumber = 28;
+	  break;
+  default:
+	  Monthnumber = 31;
+      break;
+ 
+  }
+	System.out.println("월의 날수는:"+ Monthnumber);
+	}
+
+}

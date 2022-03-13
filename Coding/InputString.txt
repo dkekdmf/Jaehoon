@@ -1,0 +1,23 @@
+
+import java.util.*;
+
+
+
+public class Hello {
+
+	public static void main(String[] args) {
+	
+
+	Scanner input = new Scanner(System.in);
+	String name;
+	int age;
+	System.out.println("이름을 입력하시오: ");
+	name = input.nextLine();
+    System.out.println("나이를 입력하식오: ");
+    age = input.nextInt();
+    
+    System.out.println(name + "님안녕하세요!" + age+ "살이시네요.");
+		
+	}
+
+}

@@ -1,0 +1,39 @@
+
+import java.util.*;
+
+
+
+public class Hello {
+
+	public static void main(String[] args) {
+	
+	String Month;
+	int MonthNumber;
+	
+	Scanner input = new Scanner(System.in);
+	
+	System.out.println("월의 이름을 입력하시오: ");
+	Month = input.nextLine();
+	
+	switch(Month) {
+	case "january":
+		MonthNumber = 1;
+		break;
+	case "february":
+		MonthNumber = 2;
+		break;
+	case "march":
+		MonthNumber = 3;
+		break;
+	default:
+		MonthNumber =0;
+		break;
+	}
+	
+	System.out.println(MonthNumber);
+	
+  
+	
+	}
+
+}

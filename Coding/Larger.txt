@@ -1,0 +1,30 @@
+
+import java.util.*;
+
+
+
+public class Hello {
+
+	public static void main(String[] args) {
+	
+		
+		int jungsu;
+		int jungsu2;
+		int max;
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("첫번째 정수: ");
+		jungsu = input.nextInt();		
+		System.out.println("두번째 정수: ");
+		jungsu2 = input.nextInt();	
+		if(jungsu>jungsu2)
+		  max = jungsu;
+		else
+			max = jungsu2;
+		
+		System.out.println("큰수는: "+ max);
+			
+			
+	}
+
+}
