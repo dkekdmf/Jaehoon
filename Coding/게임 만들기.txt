@@ -1,0 +1,222 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <windows.h>
+#pragma warning(disable:4996)
+char name;
+int sword = 400;
+int a;
+int monster;
+int HP = 300;
+int MP = 300;
+int damage;
+int gold = 10000;
+int boss = 1000;
+int etc = 0;
+int main(void) {
+
+	printf("과외스토리\n");
+	Sleep(1000);
+	printf("캐릭터 이름을 만들어 주세요.");
+	scanf("%s", &name);
+	while (1) {
+		HP = 300;
+		MP = 300;
+		printf("1. 몬스터 잡으러가기 2.무기강화하기 3. 보스잡으러가기 4. 현재 스탯\n");
+		scanf("%d", &a);
+		if (a == 1) {
+			Sleep(1000);
+			monster = (rand() % 10 + 3) * 10;
+			printf("몬스터 출현 체력:%d\n", monster);
+			Sleep(1000);
+			while (1) {
+				printf("hp:%d,mp:%d\n", HP, MP);
+				printf("1.그냥 공격하기,2. 스킬 사용하기");
+
+				scanf("%d", &a);
+				
+				if (a == 1) {
+					damage = rand() % 10 + sword;
+					Sleep(1000);
+					printf("칼로베기로 몬스터체력을 %d만큼 깍았다.\n", damage);
+					monster -= damage;
+					if (monster <= 0) {
+						int igold = (rand() & 10 + 1) * 10;
+						printf("몬스터가 죽었습니다. 획득 골드: %d\n", igold);
+						gold += igold;
+						break;
+					}
+					Sleep(1000);
+					damage = (rand() % 6 + 1) * 5;
+					printf("몬스터의 공격!!\n 자신의 체력이 %d만큼 까졌다.\n", damage);
+
+					HP -= damage;
+					if (HP <= 0) {
+						printf("사망하였습니다");
+						return 0;
+					}
+
+				}
+				if (a == 2) {
+					int imp = (rand() % 3 + 1) * 10;
+					if ((MP - imp) < 0) {
+						printf("마나가 부족합니다\n");
+						continue;
+					}
+					MP -= imp;
+					damage = sword * 2;
+					Sleep(1000);
+					printf("환영검무로 몬스터체력을 %d만큼 깍았다.\n", damage);
+					monster -= damage;
+
+					if (monster <= 0) {
+						int igold = (rand() & 10 + 1) * 10;
+						printf("몬스터가 죽었습니다. 획득 골드: %d\n", igold);
+						gold += igold;
+						break;
+					}
+					Sleep(1000);
+					damage = (rand() % 6 + 1) * 5;
+					printf("몬스터의 공격!!\n 자신의 체력이 %d만큼 까졌다.\n", damage);
+
+					HP -= damage;
+					if (HP <= 0) {
+						printf("사망하였습니다");
+						return 0;
+					}
+				}
+			}
+		}
+		if (a == 2) {
+			Sleep(1000);
+			printf("무기강화 하시겠습니까? 100gold소모, 현재 골드량%d\n", gold);
+			printf("1. 예  2. 아니오");
+			scanf("%d", &a);
+			if (a == 1) {
+				gold -= 100;
+				printf("강");
+				Sleep(1000);
+				printf("화");
+				Sleep(1000);
+				printf("중");
+				Sleep(1000);
+				int a = rand() % 10 + 1;
+				if (a >= 1 && a <= 5) {
+					printf("실패..\n");
+					continue;
+				}
+				if (a >= 6 && a <= 8) {
+					printf("성공\n");
+					sword *= 2;
+					continue;
+				}
+				if (a >= 9 && 10 >= a) {
+					printf("대성공!!");
+					sword *= 3;
+				}
+			}
+			if (a == 2) {
+				continue;
+			}
+		}
+		
+		if (a == 3) {
+			while (1) {
+				if (etc == 1) {
+					//주인공 턴 시작시 보스의 추가공격
+					if ((rand() % 10 + 1)<=2) {
+						HP -= 10;
+						printf("보스의 추가공격으로 체력이 10까졋다.\n");
+						if (HP <= 0) {
+							printf("사망하였습니다.");
+							return 0;
+						}
+				}
+					
+				}
+				printf("hp:%d,mp:%d\n", HP, MP);
+				printf("1.그냥 공격하기,2. 스킬 사용하기");
+
+				scanf("%d", &a);
+
+				if (a == 1) {
+					damage = rand() % 10 + sword;
+					Sleep(1000);
+					printf("칼로베기로 보스체력을 %d만큼 깍았다.\n", damage);
+					boss -= damage;
+					if (boss <= 0) {
+						int igold = (rand() & 100 + 1) * 10; 
+						printf("보스가 죽었습니다. 획득 골드: %d\n", igold);
+						gold += igold;
+						break;
+					}
+						
+					Sleep(1000);
+					damage = (rand() % 5 + 2) * 10;
+					printf("보스의 공격!!\n 자신의 체력이 %d만큼 까졌다.\n", damage);
+
+					HP -= damage;
+					if (HP <= 0) {
+						printf("사망하였습니다");
+						return 0;
+					}
+
+				}
+
+				if (a == 2) {
+
+					int imp = (rand() % 3 + 1) * 10;
+					if ((MP - imp) < 0) {
+						printf("마나가 부족합니다\n");
+						continue;
+					}
+					MP -= imp;
+					damage = sword * 2;
+					Sleep(1000);
+					printf("환영검무로 보스체력을 %d만큼 깍았다.\n", damage);
+					boss -= damage;
+
+					if (boss <= 0) {
+						int igold = (rand() % 100 + 1) * 10;
+						printf("보스가 죽었습니다. 획득 골드: %d\n", igold);
+						gold += igold;
+						break;
+					}
+					Sleep(1000);
+					damage = (rand() % 5 + 2) * 10;
+					printf("보스의 공격!!\n 자신의 체력이 %d만큼 까졌다.\n", damage);
+
+					HP -= damage;
+					if (HP <= 0) {
+						printf("사망하였습니다");
+						return 0;
+					}
+				}
+				if (etc == 0) {
+					etc = 1;
+				}
+			}
+		}
+		
+		if (a == 4) {
+			printf("현재스텟\n");
+			printf("HP = %d, MP = %d\n",HP,MP);
+			printf("현재 골드 : %d\n", gold);
+			printf("검의 공격력 : %d\n", sword);
+			Sleep(1000);
+			continue;
+		}
+	}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
