@@ -1,0 +1,68 @@
+const char trigPin=2;
+const char echoPin=3;
+//
+const char trigPin1=4;
+const char echoPin1=5;
+
+int pulseWidth, distance, distanceOld;
+//
+int pulseWidth1, distance1, distanceOld1;
+
+
+void setup() {
+  
+  pinMode(trigPin, OUTPUT);
+  pinMode(echoPin, INPUT);
+  
+  pinMode(trigPin1, OUTPUT);
+  pinMode(echoPin1, INPUT);
+
+
+ // digitalWrite(trigPin, LOW);
+  //digitalWrite(trigPin1, LOW);
+  
+  Serial.begin(9600);
+}
+
+void loop() {
+  digitalWrite(trigPin, LOW);
+  digitalWrite(trigPin1, LOW);
+  delayMicroseconds(2);
+  digitalWrite(trigPin, HIGH);
+  digitalWrite(trigPin1, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(trigPin, LOW);
+  digitalWrite(trigPin1, LOW);
+
+
+  pulseWidth = pulseIn(echoPin, HIGH);
+  pulseWidth1 = pulseIn(echoPin1, HIGH);
+  
+  distance = pulseWidth/58;
+  distance1 = pulseWidth1/58;
+  
+
+  //if(distance <= 200 || distance>=2){
+   // if(distance !=distanceOld){
+      Serial.print(distance);
+      Serial.print(" cm    ");
+   // };
+  //};
+
+  //
+  //if(distance1 <= 200 || distance1>=2){
+   // if(distance1 !=distanceOld1){
+      Serial.print(distance1);
+      Serial.println(" mm ");
+  //  };
+  //};
+
+
+  
+distanceOld = distance;
+
+//
+distanceOld1 = distance1;
+
+delay(1000);
+}
