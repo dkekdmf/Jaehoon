@@ -1,0 +1,217 @@
+273
+10 + 20 + 30 * 2
+"JavaScript Programming"
+---------------------------------
+273;
+273
+10 + 20 + 30 + 2;
+let name = "윤"+ "인" + "성"
+console.log("Hello World...!")
+-----------------------------------
+let a
+
+typeof(a)
+
+a =3
+
+3+4
+
+console.log("hello")
+---------------------------------
+console.log(`3+4 = ${3+4}`)
+
+3+4 = 7
+
+console.log(`올해는 ${new Date().getFullYear()}년 입니다`)
+--------------------------------
+let s =10
+let data = 'hello'
+--------------------------------
+k=10
+let k;
+--------------------------------
+class Car{
+     constructor(color){
+ this.color = color;
+}
+}
+class HybridCar extends Car{
+    constructor(color,power){
+     this.power = power;
+      super(color);
+}
+}
+
+const myCar = new HybridCar('blue','300HP')
+console.log(myCar.color+" " + myCar.power)
+--------------------------------
+
+const a=2;
+function square(a=a){
+       return a*a;
+}
+console.log(square());
+--------------------------------
+
+const init =2;
+function square(a= init){
+return a*a;
+}
+console.log(square());
+
+--------------------------------
+value;
+
+var value;
+--------------------------------
+let a;
+a=add(2,2)
+console.log(a);
+function add(n1,n2){
+return n1+n2
+}
+--------------------------------
+console.log(4%3);
+console.log(-4%3);
+console.log(4%-3);
+console.log(-4%-3);
+--------------------------------
+let data='hello'
+console.log(typeof(data));
+
+console.log("you say 'hello'");
+console.log('you say "hello"');
+
+--------------------------------
+"hello" + "hi"
+
+"hello" + 2002
+
+console.log("안녕하세요"[0]);
+console.log("hello"[2]);
+console.log(`${new Date().getFullYear}`[2])
+--------------------------------
+let hours = (new Date()).getHours();
+
+console.log(hours < 3||8 < hours);
+console.log(3<= hours && hours <=8);
+--------------------------------
+let pi
+pi = 3.14
+
+let pi = 3.14
+
+console.log(pi)
+
+pi=3
+pi="pi"
+pi=true
+--------------------------------
+
+let a
+a=12
+console.log(typeof(a));
+a="string"
+console.log(typeof(a));
+a=true
+console.log(typeof(a));
+a=12.3
+console.log(typeof(a));
+a= function(){
+;
+}
+
+console.log(typeof(a));
+let b
+console.log(typeof(b));
+b={}
+console.log(typeof(b))
+--------------------------------
+
+let b
+console.log(typeof(b))
+console.log(typeof(c))
+--------------------------------
+console.log(Number(a));
+a="33";
+console.log(Number(a));
+console.log(Number(a)+1);
+console.log(a+1);
+a=44;
+console.log(String(a));
+console.log(String(a)+1);
+console.log(a+1);
+console.log(Boolean(a))
+a=0
+console.log(Boolean(a))
+a=-1
+console.log(Boolean(a))
+console.log(Number(true))
+console.log(Number(false))
+--------------------------------
+let a= "hello";
+console.log(Number(a));
+
+let a= "hello";
+let b = Number(a);
+console.log(b);
+
+if(b==Nan){
+     console.log("a is Nan");
+}
+else
+     console.log("a is number")
+
+if(isNaN(b)){
+     console.log("a is NaN");
+
+}
+else
+     console.log("a is number")
+--------------------------------
+
+console.log(52+273);
+console.log("52"+273);
+console.log("52"-273);
+console.log("52"/273);
+console.log("52"*273);
+console.log("52"%273);
+--------------------------------
+
+let a=Number("hello");
+
+if(a){
+     console.log(a+"is true");
+}
+else
+     console.log(a+" is false");
+--------------------------------
+let a;
+
+if(a){
+   console.log(a+"is true");
+}
+else
+    console.log(a+" is false");
+
+let a=10;
+  console.log(a+ ` is not ${!a}`);
+
+let a=10;
+console.log(a+ ` is ${!!a}`);
+--------------------------------
+console.log(`52 == "52": ${52 == "52"}`);
+console.log(`52 ==="52": ${52 ==="52"}`);
+console.log();
+console.log(`0 == "": ${0 ==""}`);
+console.log(`0=== "": ${0 ===""}`);
+--------------------------------
+const constant = "변경할 수 없어요";
+constant = "";
+
+console.log(constant);
+--------------------------------
+let name = prompt("이름을 입력하시오","0");
+console.log("내 이름은 " + name+"입니다");
+
+
