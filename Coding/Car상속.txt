@@ -1,0 +1,107 @@
+package com.example.vartest
+
+import android.gesture.GestureOverlayView
+
+open class Car {
+    var color: String = "";
+    var speed: Int = 0;
+    var carName : String = ""
+    var year : Int = 1;
+    var price : Int= 5000;
+    var mileage : Double = 0.0;
+    var brand : String  = "";
+    var sunroof : String = "";
+    var driveDistance : String = "";
+    var drivespeed : String = "";
+
+
+   open fun price1(value: Int){
+        var  price = value;
+    }
+
+
+    constructor()
+    constructor(carName: String,year : Int, color: String,price : Int,sunroof : String) {
+
+        this.carName = carName;
+        this.speed = speed;
+        this.color = color
+        this.price = price
+        this.year = year
+        this.sunroof = sunroof
+
+
+
+    }
+    open fun gear(value : String){
+
+
+    }
+   open  fun upSpeed(value: Int) {
+
+        if (speed + value >= 200) {
+            speed = 200
+        } else
+            speed = speed + value;
+
+
+    }
+}
+
+
+class Automibiles : Car {
+    var seatNum : Int =0
+
+    constructor(){
+
+    }
+    fun countSeatNum() : Int {
+        return seatNum
+    }
+    override fun price1(value: Int) {
+        var priceLowEffect: Int = value/10
+
+       price = price - priceLowEffect
+
+
+    }
+
+    }
+
+
+
+
+
+    fun main() {
+
+        var SUV: Car = Car();
+        SUV.carName = "SSANTAFFE"
+        SUV.brand = "HYUNDAE"
+        SUV.price = 40000000;
+         SUV.sunroof = "열림불가"
+        SUV.year = 10
+      //  SUV.upSpeed(60)
+
+        SUV.price1(100);
+        println("차종: ${SUV.carName}");
+        println("브랜드: ${SUV.brand}");
+        println("연식: ${SUV.year}");
+        println("가격: ${SUV.price}");
+        println("선루프 : ${SUV.sunroof}");
+        println("자동차의 감가는 1년당 ${SUV.price1(100)}입니다")
+
+
+        var SportsCar: Car = Car();
+        SportsCar.carName = "kamaro"
+        SportsCar.sunroof = "열림가능"
+        SportsCar.price1(100)
+        SportsCar.year = 5
+        SportsCar.brand = "chevoret"
+        println("차종: ${SportsCar.carName}");
+        println("브랜드: ${SportsCar.brand}");
+        println("연식: ${SportsCar.year}");
+        println("가격: ${SportsCar.price}")
+        println("선루프 : ${SportsCar.sunroof}");
+        println("자동차의 감가는 1년당 ${SportsCar.price1(50)}입니다.")
+     
+    }
