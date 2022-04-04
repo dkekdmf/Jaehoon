@@ -1,0 +1,62 @@
+const readline= require('readline');
+
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout,
+});
+let min =-100001;
+let max = 0;
+let endMunja = ""
+let rawdata=[];
+let plus=[];
+let minus=[];
+let munja = [];
+let count = 0;
+rl.on('line',(line)=>{
+    rawdata.push(line);
+    if(line >0){
+     plus.push(line);
+    count++;
+
+    }
+     else if(line <0){
+    
+        minus.push(line);   
+}
+     else{
+         munja.push(line);
+         munja.sort();
+     }
+
+});
+rl.on('close',()=>{
+    console.log("로우데이터 저장: " + rawdata);
+    console.log("plus배열: "+plus);
+    console.log("minus배열: "+minus);
+    console.log("문자배열: "+munja);
+    for(let i in plus){
+        if (max < plus[i]) {
+            max= plus[i];
+          }
+         
+    }
+    console.log("양의수의 최대값: "+max)
+    console.log("양의수의 갯수: "+count)
+    for(let i in minus){
+        if (min < minus[i]) {
+            min= minus[i];
+          }
+    }
+    console.log("음수의 최댓값: "+min)
+   
+    console.log("정렳 후 마지막 문장: "+munja[munja.length-1])
+         
+    process.exit();
+})
+
+
+
+
+
+
+
