@@ -1,0 +1,55 @@
+const  repl = require('repl');
+
+repl.start({
+    prompt : "입력 때 앞에 출력할 문자열",
+    eval : (command,context,filename,callback) =>{
+
+
+        callback()
+    }
+});
+
+
+
+const  repl = require('repl');
+
+repl.start({
+    prompt : "입력 때 앞에 출력할 문자열",
+    eval : (command,context,filename,callback) =>{
+          let number = Number(command);
+          if(isNaN(number)){
+              console.log("숫자가 아닙니다");
+          }
+          else{
+              console.log("숫자입니다");
+          }
+
+        callback()
+    }
+});
+
+
+const readline= require('readline');
+
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout,
+});
+let input=[];
+rl.on('line',(line)=>{
+     input.push(Number(line));
+});
+rl.on('close',()=>{
+    console.log(input);
+    inputsum();
+    process.exit();
+});
+
+function inputsum(){
+    let sum = 0;
+  for(let number of input){
+       sum+=number
+  }
+
+console.log(sum)
+}
