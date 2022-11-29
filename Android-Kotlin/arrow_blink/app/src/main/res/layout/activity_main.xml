@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+
+    <ImageView
+        android:id="@+id/arrow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/arrow1"
+        android:layout_marginStart="300dp"
+        android:visibility="invisible"
+        android:layout_marginTop="60dp"/>
+    <ImageView
+        android:id="@+id/arrow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/arrow1"
+        android:layout_marginStart="15dp"
+        android:rotation="180"
+        android:visibility="invisible"
+        android:layout_marginTop="-60dp"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+    <ImageView
+
+        android:id="@+id/SpeedView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/speedimage" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+
+    <Button
+        android:id="@+id/leftButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="왼쪽 방향 지시등"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/black"/>
+    <Button
+        android:id="@+id/OffleftButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="왼쪽 방향 지시등 끄기"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/black"
+/>
+    <Button
+
+        android:id="@+id/rightButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="오른쪽 방향 지시등"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/black"
+        />
+    <Button
+
+        android:id="@+id/OffrightButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="오른쪽 방향 지시등 끄기"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/black"/>
+
+
+    <Button
+        android:id="@+id/centerButton"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="비상 점멸등"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/black"/>
+    <Button
+        android:id="@+id/OffcenterButton"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="비상점멸등 끄기"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/black"/>
+
+</LinearLayout>
