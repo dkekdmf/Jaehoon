@@ -1,0 +1,23 @@
+#include <stdio.h>
+#pragma warning(disable:4996)
+
+int main(void) {
+
+	int a, b, c;
+	int d, e, f;
+
+
+	scanf("%d%d%d", &a,&b,&c);
+	scanf("%d%d%d", &d,&e,&f);
+	
+	int h = ((100 * a) + (10 * b) + c)* f;
+	int i = ((100 * a) + (10 * b) + c) * e;
+	int j = ((100 * a) + (10 * b) + c) * d;
+	
+	printf("%d\n", h);
+	printf("%d\n", i);
+	printf("%d\n", j);
+	printf("%d\n", h + (10 * i) + (100 * j));
+
+
+}
