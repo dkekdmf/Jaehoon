@@ -1,0 +1,128 @@
+
+
+#include "LedControl.h" // 도트매트릭스 제어용 라이브러리 연결
+//12,11,10,1 각핀에 DIN,CLK,CS,number) 연결
+LedControl lc = LedControl(12, 11,10, 1);
+//스위치 핀 연결
+const int leftblinkPin = 2;
+const int rightblinkPin = 3;
+const int emergencyPin = 4;
+//카운트값 0으로 초기화
+int count = 0; 
+//오른쪽 화살표 배열정의
+byte arrow1[] =
+{
+  B00010000,
+  B00111000,
+  B01111100,
+  B11111110,
+  B00111000,
+  B00111000,
+  B00111000,
+  B00111000,
+  B00111000
+};
+//왼쪽 화살표 배열정의
+byte arrow2[] =
+{
+   
+   B00111000, 
+   B00111000,
+   B00111000,
+   B00111000,
+   B11111110,
+   B01111100,
+   B00111000,
+   B00010000
+};
+//비상 점멸등 배열정의
+byte emergency[] =
+{
+   B11111111,
+   B11111111,
+   B11111111,
+   B11111111,
+   B11111111,
+   B11111111,
+   B11111111,
+   B11111111
+};
+void setup() {
+ //스위치 INPUT_PULLUP
+  pinMode(leftblinkPin, INPUT_PULLUP);
+   pinMode(rightblinkPin, INPUT_PULLUP);
+    pinMode(emergencyPin, INPUT_PULLUP);
+
+  lc.shutdown(0, false); LED 도트매트릭스 셧다운 설정
+  lc.setIntensity(0, 5); // LED 도트매트릭스 밝기
+  lc.clearDisplay(0); // LED 도트매트릭스 모두 지우기
+};
+
+void loop() {
+ //디지털 리드로 읽어와 각 변수에 저장
+  int swInput = digitalRead(leftblinkPin);
+  int swInput1 = digitalRead(rightblinkPin);
+  int swInput2 = digitalRead(emergencyPin);
+  if(swInput ==LOW){ //스위치가 눌리면,
+ for(; ;){   //무한 루프로 설정
+  showLED(arrow2); //showLED(왼쪽화살표 점멸) 호출
+   delay(1000); //딜레이
+ if(swInput == LOW){// 스위치 한번 더누르면
+ break; //무한루프 탈출
+ }
+ }
+//for문으로 도트매트릭스 배열 0 값으로 초기화
+  {
+   for (int i = 0; i < 10; i++) 
+    lc.setRow(0, i, B00000000);
+  }
+  }
+++count; //안정적 스위치위한 count값 증가
+  if(swInput1 ==LOW){ //스위치가 눌리면,
+ for(; ;){ //무한 루프로 설정
+  showLED(arrow1);  //showLED(오른쪽 화살표 점멸) 호출
+   delay(1000); //딜레이
+ if(swInput1 == LOW){// 스위치 한번 더누르면
+ break;   //무한루프 탈출
+ }
+ }
+//for문으로 도트매트릭스 배열 0 값으로 초기화
+   for (int i = 0; i < 10; i++)
+  {
+    lc.setRow(0, i, B00000000);
+  }
+  }
+++count; //안정적 스위치위한 count값 증가
+   if(swInput2==LOW){ //스위치가 눌리면,
+ for(; ;){  //무한 루프로 설정
+  showLED(emergency); //showLED(비상점멸등 점멸) 호출
+   delay(1000);  //딜레이
+ if(swInput2 == LOW){// 스위치 한번 더누르면
+ break;  //무한루프 탈출
+ }
+ }//for문으로 도트매트릭스 배열 0 값으로 초기화
+   for (int i = 0; i < 10; i++)
+  {
+    lc.setRow(0, i, B00000000);
+  }
+  }
+++count;//안정적 스위치위한 count값 증가
+
+}
+
+void showLED(byte arr[]) //showLED함수 
+{
+
+    for (int i = 0; i < 8; i++) // 앞의 배열의 값에 따라 도트매트릭스 화면 설정
+    {
+      lc.setRow(0, i, arr[i]);
+    }
+   
+    delay(1000);
+    for (int i = 0; i < 8; i++) // 깜빡이기를 위한 도트매트릭스 배열 0으로 초기화
+    {
+      lc.setRow(0, i, B00000000);
+    }
+   
+
+}
