@@ -1,0 +1,38 @@
+const char trigPin = 7;//트리그 핀 설정
+const char echoPin = 8; // 에코핀 설정
+const int piezo = 9; //피에조 버저 핀 설정
+//펄스 폭과 거리설정
+int pulseWidth;
+int distance;
+int distanceOld;
+
+void setup(){
+pinMode(trigPin,OUTPUT); //트리그핀은 아웃풋
+pinMode(echoPin,INPUT); // 에코핀은 인풋
+digitalWrite(trigPin, LOW); //트리그핀의 초기값은 LOW
+Serial.begin(9600);
+  
+};
+void loop(){
+  //10us의 트리거 신호를 HC-SRO4로 보냄.
+digitalWrite(trigPin,HIGH);
+delayMicroseconds(10);
+digitalWrite(trigPin,LOW);
+pulseWidth = pulseIn(echoPin,HIGH); //에코 펄스 폭을 측정하여. pulseWidth변수에 저장
+distance = pulseWidth/58;  //cm단위로 출력하기 위해 58로 나눈다.
+if(distance <=2){            //distance값이 2 이하이면,
+
+  if(distance!=distanceOld){    //이전의 거리값과 비교하여 변화가 있을 경우,
+  Serial.print(distance);
+  Serial.println(" cm");
+
+  tone(piezo,500,1000);          //피에조 버저 출력
+  delay(1000);                   //딜레이
+  noTone(piezo);                 // 피에조 끔.
+ }
+
+  
+}
+distanceOld = distance;           //distanceOld값을 현재 distance로 바꿈.
+delay(100);
+}
