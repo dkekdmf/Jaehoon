@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10dp"
+
+    android:background="@color/black">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    android:layout_margin="30dp">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ResultBMI"
+        tools:text = "BMI :"
+        android:text="BMI :"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="40dp"
+        android:fontFamily="@font/happytfruit">
+
+    </TextView>
+    <TextView
+         tools:text = "result"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Result"
+        android:fontFamily="@font/happytfruit">
+    </TextView>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="30dp"
+        >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ResultBMI1"
+        tools:text = "결과는 :"
+        android:text="결과는 :"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        android:fontFamily="@font/happytfruit">
+
+    </TextView>
+    <TextView
+        tools:text = "result11111"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Result1"
+        android:textColor="@color/white"
+        android:fontFamily="@font/happytfruit"
+        >
+    </TextView>
+</LinearLayout>
+</LinearLayout>
