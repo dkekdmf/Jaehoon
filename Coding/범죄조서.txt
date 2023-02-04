@@ -1,0 +1,26 @@
+#include <stdio.h>
+#pragma warning(disable:4996)
+
+int main(void) {
+	int age;
+	float weight;
+	double height;
+	char str[256];
+
+	printf("몇살이에요?:\n");
+	scanf("%d", &age);
+	printf("체중은?:\n");
+	scanf("%f", &weight);
+
+	printf("키는?:\n");
+	scanf("%lf", &height);
+
+	printf("범죄명은?:");
+	scanf("%s", str, sizeof(str));
+
+	printf("\n\n 범죄 조서 출력\n\n");
+	printf("나이: %d\n", age);
+	printf("체중: %.2f\n", weight);
+	printf("키: %.2lf\n", height);
+	printf("범죄명: %s\n", str);
+}
