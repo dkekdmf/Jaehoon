@@ -1,0 +1,53 @@
+#include <stdio.h>
+#include <time.h>
+#include<stdlib.h>
+#pragma warning(disable:4996)
+
+int getNumberRand(int level);
+void showQuestion(int level, int num1, int num2);
+void success();
+void fail();
+int main(void) {
+	int count = 0;
+	srand(time(NULL));
+	for (int i = 1; i <= 5; i++) {
+
+		int num1 = getNumberRand(i);
+		int num2 = getNumberRand(i);
+
+		showQuestion(i,num1,num2);
+
+		int answer = -1;
+		scanf("%d", &answer);
+		if (answer == -1) {
+			printf("프로그램을 종료합니다");
+			exit(0);
+		}
+		else if (answer == num1 * num2) {
+			success();
+			count++;
+		}
+		else {
+			fail();
+		}
+
+	}
+	printf("당신은 5개의 비밀번호중 %d개를 맞추었습니다.", count);
+}
+int getNumberRand(int level) {
+
+	return rand() % (level*7) + 1;
+}
+void showQuestion(int level, int num1, int num2) {
+
+	printf("%d 번째 비밀번호",level);
+	printf("%d * %d는?", num1, num2);
+	printf("비밀번호를 입력하세요");
+}
+void success() {
+
+	printf("성공입니다\n");
+}
+void fail() {
+	printf("실패입니다\n");
+}
