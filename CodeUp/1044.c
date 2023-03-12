@@ -1,10 +1,10 @@
 #include <stdio.h>
 #pragma warning(disable:4996)
 
-int main_1030(void) {
-	long long int a;
+int main_1044(void) {
+	long long a;
 	scanf("%lld", &a);
-	printf("%lld", a);
+	printf("%lld", a + 1);
 
-
+	return 0;
 }
