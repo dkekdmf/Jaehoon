@@ -1,0 +1,5 @@
+N = int(input())
+C= N*(78/100)
+D = N*(80/100)
+F = D+(N-D)*(78/100)
+print(int(C),int(F))
