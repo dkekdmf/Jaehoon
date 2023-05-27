@@ -2,7 +2,7 @@
 while True:
     ans = []
     a= input().split()
-    print(type(ans))
+    print(type(a))
     if a[0]=='0':
         break
     a.remove(a[0])
