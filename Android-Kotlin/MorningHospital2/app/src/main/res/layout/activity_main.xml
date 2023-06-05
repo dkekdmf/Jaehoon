@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+ <ImageView
+     android:layout_width="match_parent"
+     android:layout_height="30dp"
+     android:src="@drawable/netflix2"
+     android:layout_weight="1"
+     android:scaleType="centerCrop"
+     android:id="@+id/netflix"
+     >
+
+ </ImageView>
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:src="@drawable/coupang333"
+    android:layout_weight="1"
+    android:scaleType="centerCrop"
+    android:id="@+id/coupang"
+>
+</ImageView>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:src="@drawable/watcha"
+        android:layout_weight="1"
+        android:scaleType="centerCrop"
+        android:id="@+id/watcha">
+    </ImageView>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:src="@drawable/tving"
+        android:layout_weight="1"
+        android:scaleType="centerCrop"
+        android:id="@+id/tving">
+
+    </ImageView>
+</LinearLayout>
