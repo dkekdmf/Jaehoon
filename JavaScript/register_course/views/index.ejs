@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body style="text-align: center">
+    <h1>로그인 페이지</h1>
+    <form method="post" action="/users/login">
+      <div>
+        <label>ID</label>
+        <input type="text" name="id" id="id">
+      </div>
+      <div>
+        <label>Password</label>
+        <input type="password" name="password" id="password">
+      </div>
+      <br>
+      <input type="button" value="가입" id="join" onclick="goJoin();">
+      <input type="button" value="입력" onclick="login()">
+    </form>
+  </body>
+  <script>
+    function login() {
+      var id = document.getElementById('id').value;
+      var password = document.getElementById('password').value;
+
+      let postObj = {
+        id: id,
+        password: password
+      }
+      if (id == 'admin') {
+        location.href = '/users/admin';
+        return;
+      }
+
+      var httpRequest = new XMLHttpRequest();
+      httpRequest.onreadystatechange = () => {
+        if (httpRequest.readyState === XMLHttpRequest.DONE) {
+          if (httpRequest.status === 200) {
+            var result = httpRequest.response;
+            if (result) {
+              alert(result.msg);
+            }
+            if (result.code == 0) {
+              location.href = '/users/courses';
+            }
+
+          } else {
+            alert('Request Error!');
+          }
+        }
+      };
+      console.log(postObj);
+      httpRequest.open('POST', '/users/login', true);
+      httpRequest.setRequestHeader("Content-Type", "application/json");
+      httpRequest.responseType = "json";
+      httpRequest.send(JSON.stringify(postObj));
+    }
+
+    function goJoin() {
+      window.open('/users/join');
+    }
+
+  </script>
+</html>
