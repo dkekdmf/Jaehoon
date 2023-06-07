@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body style="text-align: center">
+    <h1>관리자 등록 페이지</h1>
+    <form method="post" action="/users/course_add"  >
+      <div>
+        <label>교과목 추가</label>
+        <input type="text" name="course" id="course">
+      </div>
+      <br>
+      <input type="submit" value="등록" >
+      <input type="button" value="갱신"  onclick="location.reload()">
+    </form>
+    <hr>
+    <table align="center">
+      <tr>
+        <th>교과목이름</th>
+        <th>삭제</th>
+      </tr>
+      <% for(var i = 0; i < courses.length; i++){
+      if(courses[i] != null){%>
+      <tr>
+        <td><%=courses[i].name%></td>
+        <td><input type="button" value="삭제" onclick="location.href = '/users/course_delete?idx=<%=courses[i].idx%>'"></td>
+      </tr>
+      <% } }%>
+    </table>
+  <hr>
+  <h3>수강현황</h3>
+    <table align="center">
+      <tr>
+        <th>교과목이름</th>
+        <th>수강생</th>
+      </tr>
+      <% for(var i = 0; i < courses.length; i++){
+      if(courses[i] != null){%>
+      <tr>
+        <td><%=courses[i].name%></td>
+        <%
+          var id = '';
+          if(courses[i].User != null) {
+          for (var j = 0; j < courses[i].User.length; j++) {
+            id = id + courses[i].User[j].id + ', ';
+           }
+          }
+        %>
+        <td>
+          <%=id
+          %>
+        </td>
+      </tr>
+      <% } }%>
+    </table>
+  </body>
+  <script>
+  </script>
+</html>

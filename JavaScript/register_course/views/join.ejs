@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body style="text-align: center">
+    <h1>회원가입 페이지</h1>
+    <form method="post" action="/users/joinproc" id="joinproc_frm">
+      <div>
+        <label>ID</label>
+        <input type="text" name="id" id="id">
+      </div>
+      <div>
+        <label>Password 입력</label>
+        <input type="password" name="password1" id="password1">
+      </div>
+      <div>
+        <label>Password 검증</label>
+        <input type="password" name="password2" id="password2">
+      </div>
+      <br>
+      <input type="button" value="가입" id="join" onclick="goJoin();">
+    </form>
+  </body>
+  <script>
+    function goJoin() {
+      var id = document.getElementById('id').value;
+      var password1 = document.getElementById('password1').value;
+      var password2 = document.getElementById('password2').value;
+
+      console.log(id);
+      if (id == '') {
+        alert('ID를 입력하세요!');
+        return;
+      }
+      if (password1 == '' || password2 == '') {
+        alert('비밀번호를 입력하세요!');
+        return;
+      }
+
+      if (password1 != password2) {
+        alert('비밀번호가 일치하지 않습니다!');
+        return;
+      }
+
+      var eng = /^[a-zA-Z]*$/;
+      var specialRule = /[`~!@#$%^&*|\\\'\";:\/?]/gi;
+
+      if(!eng.test(id)) {
+        alert("ID는 영문자로만 구성되어야 합니다.");
+        return;
+      }
+      if(!specialRule.test(password1)) {
+        alert("비밀번호는 특수문자를 반드시 포함해야 합니다.");
+        return;
+      }
+      if (password1.length < 6) {
+        alert("비밀번호는 6자리 이상으로 입력해주세요");
+        return;
+      }
+      document.getElementById('joinproc_frm').submit();
+    }
+
+  </script>
+</html>

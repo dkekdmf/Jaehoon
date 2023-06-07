@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body style="text-align: center">
+    <h1>수강신청 페이지</h1>
+    <hr>
+    <table align="center">
+      <tr>
+        <th>신청 가능 교과목</th>
+        <th>신청</th>
+      </tr>
+      <% for(var i = 0; i < courses.length; i++){
+        if(courses[i].User != null ){
+          for (var j = 0; j < courses[i].User.length; j++) {
+            if(courses[i].User[j].id != login_user.id){ %>
+            <tr>
+              <td><%=courses[i].name%></td>
+              <td><input type="button" value="신청" onclick="location.href = '/users/user_course_add?idx=<%=courses[i].idx%>'"></td>
+            </tr>
+            <%}
+          }
+        }
+      if(courses[i].User == null || courses[i].User.length == 0){%>
+      <tr>
+        <td><%=courses[i].name%></td>
+        <td><input type="button" value="신청" onclick="location.href = '/users/user_course_add?idx=<%=courses[i].idx%>'"></td>
+      </tr>
+      <% } }%>
+    </table>
+    <hr>
+    <table align="center">
+      <tr>
+        <th>신청한 교과목</th>
+        <th>신청한 교과목삭제</th>
+      </tr>
+      <% for(var i = 0; i < courses.length; i++){
+      if(courses[i].User != null ){
+      for (var j = 0; j < courses[i].User.length; j++) {
+      if(courses[i].User[j].id == login_user.id){ %>
+      <tr>
+        <td><%=courses[i].name%></td>
+        <td><input type="button" value="삭제" onclick="location.href = '/users/user_course_delete?idx=<%=courses[i].idx%>'"></td>
+      </tr>
+      <% }}}}%>
+    </table>
+  </body>
+  <script>
+  </script>
+</html>
