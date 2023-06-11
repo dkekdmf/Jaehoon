@@ -1,0 +1,39 @@
+#pragma once
+#ifndef TOWER_H
+#define TOWER_H
+class Tower
+{
+public:
+	Tower() : mHeight(1)
+	{
+
+	}
+
+	Tower(const int height)
+	{
+		mHeight = height;
+	}
+
+	~Tower()
+	{
+
+	}
+
+public:
+	int getHeight()
+	{
+		return mHeight;
+	}
+
+	void setHeight(int height)
+	{
+		if (height > 0)
+		{
+			mHeight = height;
+		}
+	}
+
+private:
+	int mHeight;
+};
+#endif
