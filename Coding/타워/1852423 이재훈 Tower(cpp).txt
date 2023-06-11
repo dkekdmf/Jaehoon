@@ -1,0 +1,22 @@
+#include <iostream>
+#include "Tower.h"
+
+using namespace std;
+#pragma once
+
+
+
+int main()
+{
+    Tower a;
+    Tower b(99);
+
+    cout << "타워 a의 높이는 " << a.getHeight() << "미터" << endl;
+    cout << "타워 b의 높이는 " << b.getHeight() << "미터" << endl;
+
+    a.setHeight(50);
+    cout << "타워 a의 높이는 " << a.getHeight() << "미터" << endl;
+
+
+    return 0;
+}
