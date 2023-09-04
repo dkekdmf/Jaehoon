@@ -1,18 +1,18 @@
 T = int(input())
 
 for _ in range(T):
-    n,m = list(map(int,input().split()))
-    queue = list(map(int,input().split()))
-    queue = [(i,idx) for idx, i in enumerate(queue)]
+    a,b = list(map(int, input().split()))
+    q = list(map(int,input().split()))
+    q = [(i,idx) for idx,i in enumerate(q)]
     
-    count = 0
+    count =0
     while True:
-        if queue[0][0] == max(queue, key =lambda x: x[0])[0]:
+        if q[0][0] == max(q,key=lambda x:x[0])[0]:
             count+=1
-            if queue[0][1] == m:
+            if q[0][1] == b:
                 print(count)
                 break
             else:
-                queue.pop(0)
-        else:
-            queue.append(queue.pop(0))
+                q.pop(0)
+        else: 
+            q.append(q.pop(0))
