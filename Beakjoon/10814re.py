@@ -1,9 +1,11 @@
-N = int(input())
-lst2 = []
-for i in range(N):
-   lst = input().split()
-   lst2.append((int(lst[0]),lst[1]))
-print(lst2)
-lst2.sort(key=lambda x:(x[0],x))
-for i in lst2:
+
+array= []
+for i in range(int(input())):
+    input1 = input().split()
+    array.append((int(input1[0]),input1[1]))
+   
+   
+array= sorted(array,key = lambda x : x[0])  
+
+for i in array:
     print(i[0],i[1])

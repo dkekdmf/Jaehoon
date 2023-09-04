@@ -1,14 +1,6 @@
-# lst = list(map(int,input()))
-
-# lst.sort()
-# lst.reverse()
-
-# for i in lst:
-#     print(i,end = '')
-    
-array = input()
+arr = input()
 
 for i in range(9,-1,-1):
-    for j in array:
+    for j in arr:
         if int(j) == i:
-            print(i,end='')
+            print(i,end = '')
