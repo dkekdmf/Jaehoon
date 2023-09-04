@@ -1,20 +1,21 @@
 T = int(input())
+
 for _ in range(T):
-    left_stack = []
-    right_stack = []
-    data = input()
+    leftstack = []
+    rightstack = []
+    data1 = input()
     
-    for i in data:
-        if i== '-':
-            if left_stack:
-                left_stack.pop()
-        elif i == '<':
-            if left_stack:
-                right_stack.append(left_stack.pop())
-        elif i == '>':
-            if right_stack:
-                left_stack.append(right_stack.pop())
+    for i in data1:
+        if i =='-':
+            if leftstack:
+                leftstack.pop()
+        elif i== '<':
+            if leftstack:
+                rightstack.append(leftstack.pop())
+        elif i =='>':
+            if rightstack:
+                leftstack.append(rightstack.pop())
         else:
-            left_stack.append(i)
-    left_stack.extend(reversed(right_stack))
-    print("".join(left_stack))        
+            leftstack.append(i)
+    leftstack.extend(reversed(rightstack))
+    print(''.join(leftstack))
